@@ -1,23 +1,22 @@
 * { cursor: default; }
 a:link, a:visited { color: inherit; cursor:pointer;}
+a:link img { cursor:pointer; }
 body, header, footer, article, h1 { margin: 0; padding: 0; }
 
 /* PAINT */
 
 html {
-  background:hsl(0, 0%, 33%);
-  background: linear-gradient(hsl(210, 5%, 33%), hsl(210, 10%, 23%));
+  background: linear-gradient(hsl(210, 10%, 23%), hsl(210, 5%, 33%));
   color: hsla(0, 0%, 100%, 0.66);
+  font: 19px/20px "Calibri", "GillSans", sans-serif;
+  text-shadow: 0px -1px 3px hsla(0, 0%, 0%, 0.33);
 }
 
 body {
-  font: 19px/20px "Gill Sans";
-  text-shadow: 0px -1px 3px hsla(0, 0%, 0%, 0.33);
 }
 
 body > footer {
   height: 200px;
-
 }
 
 article {
@@ -62,6 +61,7 @@ article {
 
 }
 
+#minilock-id-inspector img,
 #minilock-file-format img {
   width: 460px;
   display: block;
@@ -84,7 +84,7 @@ body > header {
   text-align: right;
 }
 body > header b {
-  font-family: "GillSans-Bold";
+  font-family: "Calibri", "GillSans-Bold";
   color: hsla(0, 0%, 100%, 0.78);
 }
 
@@ -138,16 +138,15 @@ body > footer img {
     margin-right: 50px;
     height: 20px;
     z-index: 2;
-    font: 19px/20px "GillSans";
+    font: 19px/20px "Calibri", "GillSans";
     color: hsl(0, 0%, 50%);
   }
   body > footer {
-    right: 0px; left: 0;
+    bottom: 0px; right: 0px; left: 0;
     height: 60px;
-    bottom: 0px;
     text-align: left;
     border-bottom: 18px solid hsl(0, 0%, 50%);
-    background: linear-gradient(hsl(210, 5%, 33%), hsl(210, 5%, 33%));
+    background: hsl(210, 5%, 33%);
     box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
     color: hsl(0, 0%, 50%);
   }
@@ -167,7 +166,6 @@ body > footer img {
     position: fixed;
     bottom: 38px;
     left: 20px;
-    /*margin-left: 50px;*/
     text-decoration: none;
   }
   body > footer > a.miniLock_ID {
@@ -195,7 +193,7 @@ body > footer img {
   body > header {
     right: 85%;
     width: 150px;
-    font: 30px/30px "GillSans-Bold";
+    font: 30px/30px "Calibri", "GillSans";
     color: hsl(0, 0%, 50%);
   }
   body > footer {
@@ -203,6 +201,7 @@ body > footer img {
     right: 85%;
     height: 60px;
     color: hsl(0, 0%, 50%);
+    /*font: 15px/20px "Calibri", "GillSans";*/
   }
   body > footer img {
     box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
