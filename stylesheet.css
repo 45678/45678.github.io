@@ -36,21 +36,7 @@ article {
   overflow: visible;
 }
 
-#minilock-chrome-app div.video {
-  width: 300px; height: 255px;
-  margin: 10px;
-  box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.33);
-  /*float: left;*/
-  overflow: hidden;
-}
-#minilock-chrome-app div.video iframe {
-  /*padding: 0 0px;*/
-  position: relative;
-  /*top: -46px;*/
-  /*background: hsl(0, 0%, 0%);*/
-  display: block;
-  /*width: 299px; height: 300px;*/
-}
+
 
 #minilock-chrome-app div.big.video {
   width: auto; height: auto;
@@ -61,6 +47,7 @@ article {
 #minilock-chrome-app div.big.video iframe {
   position: relative;
   display: block;
+  border: 0;
 
 
 }
