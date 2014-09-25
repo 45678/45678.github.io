@@ -1,7 +1,8 @@
 * { cursor: default; }
 a:link, a:visited { color: inherit; cursor:pointer;}
 a:link img { cursor:pointer; }
-body, header, footer, article, h1, h2, iframe { margin: 0; padding: 0; }
+h1, h2 { font: inherit; }
+body, header, footer, article, h1, h2, iframe { display: block; margin: 0; padding: 0; border: 0; }
 
 /* PAINT & TYPE */
 
@@ -11,8 +12,6 @@ html {
   color: hsla(0, 0%, 100%, 0.66);
   text-shadow: 0px -1px 3px hsla(0, 0%, 0%, 0.33);
 }
-
-
 
 b {
   font-family: "Calibri-Bold", "GillSans-Bold";
@@ -31,30 +30,12 @@ body > header {
 article {
   margin: 40px 0;
   overflow: hidden;
-  clear: both;
 }
-
-#minilock-chrome-app {
-  overflow: visible;
-}
-
-
 
 #minilock-chrome-app div.big.video {
-  width: auto; height: auto;
   margin: 20px 10px 20px;
   box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.33);
-  /*outline: 2px solid white;*/
 }
-#minilock-chrome-app div.big.video iframe {
-  position: relative;
-  display: block;
-  border: 0;
-
-
-}
-
-
 
 #minilock-id-inspector img,
 #minilock-file-format img {
@@ -91,11 +72,6 @@ body.loaded > article header {
   opacity: 1;
   transition: opacity 666ms linear 333ms;
 }
-body.loaded > article header h2 {
-  font: 19px/20px "Calibri", "GillSans";
-  /*font: 30px/30px "Calibri", "GillSans";*/
-}
-
 
 body > article div.video,
 body > article a:link img {
@@ -111,13 +87,9 @@ body > footer {
   position: fixed;
   z-index: 1;
 }
-
 body > footer img {
-  width: 90px;
-  height: 90px;
   display: block;
 }
-
 body > footer a {
   text-decoration: none;
   white-space: nowrap;
