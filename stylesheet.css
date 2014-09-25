@@ -1,5 +1,5 @@
 * { cursor: default; }
-a:visited { color: inherit; }
+a:link, a:visited { color: inherit; cursor:pointer;}
 body, header, footer, article, h1 { margin: 0; padding: 0; }
 
 /* PAINT */
@@ -8,11 +8,12 @@ html {
   background:hsl(0, 0%, 33%);
   background: linear-gradient(hsl(210, 0%, 33%), hsl(210, 0%, 33%));
   background: linear-gradient(hsl(210, 5%, 33%), hsl(210, 5%, 33%));
-  color: hsl(0, 0%, 66%);
+  color: hsla(0, 0%, 100%, 0.66);
 }
 
 body {
-  font: 15px/20px "Gill Sans";
+  font: 19px/20px "Gill Sans";
+  text-shadow: 0px -1px 3px hsla(0, 0%, 0%, 0.33);
 }
 
 body > footer {
@@ -84,7 +85,7 @@ body > header {
   /*color: white;*/
   text-align: right;
   font: 30px/30px "GillSans";
-  opacity: 0.2;
+  opacity: 1;
 
   /*-webkit-text-stroke-width: 1px;*/
   /*-webkit-text-stroke-color: hsla(0, 0%, 0%, 0.33);*/
@@ -95,7 +96,7 @@ body.loaded > header {
 body > header b {
   font-family: "GillSans-Bold";
   /*letter-spacing: 1px;*/
-  color: white;
+  color: hsla(0, 0%, 100%, 0.78);
 }
 
 body > article header {
@@ -105,7 +106,7 @@ body > article header {
 }
 body.loaded > article header {
   opacity: 1;
-  transition: opacity 333ms linear 1s;
+  transition: opacity 666ms linear 333ms;
 }
 
 body > article div.video,
@@ -115,14 +116,12 @@ body > article a:link img {
 body.loaded > article div.video,
 body.loaded > article a:link img {
   opacity: 1;
-  transition: opacity 500ms linear 100ms;
+  transition: opacity 666ms linear 666ms;
 }
 
 body > footer {
   position: fixed;
   z-index: 1;
-  bottom: 50%;
-  height: 90px;
 }
 
 
@@ -136,31 +135,62 @@ body > footer img {
 
 /* #### Booklet sized screens #### */
 @media screen and (max-width: 1440px) {
+  html {
+
+  }
   body {
     width: 960px;
     margin: 60px auto 130px;
-
+    /*border-bottom: 18px solid hsl(0, 0%, 90%);*/
   }
   body > header {
-    bottom: -3px;
+    bottom: 38px;
     right: 50%;
-    width: 160px;
-    padding: 20px 60px;
+    margin-right: 50px;
+    height: 20px;
     z-index: 2;
-    text-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.33), 0px -1px hsla(0, 0%, 0%, 1);
+    font: 19px/20px "GillSans";
+    color: hsl(0, 0%, 50%);
   }
   body > footer {
-    right: 0px;
-    left: 0;
-    padding: 20px;
+    right: 0px; left: 0;
+    height: 60px;
     bottom: 0px;
-    text-align: right;
+    text-align: left;
+    border-bottom: 18px solid hsl(0, 0%, 50%);
     background: linear-gradient(hsl(210, 5%, 33%), hsl(210, 5%, 33%));
     box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
+    color: hsl(0, 0%, 50%);
   }
   body > footer img {
-    margin: 0 auto;
-    box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.33);
+    margin: -15px auto 0;
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
+    width: 60px;
+    height: 60px;
+  }
+  body > footer > a.view_source {
+    position: fixed;
+    bottom: 38px;
+    right: 20px;
+    text-decoration: none;
+  }
+  body > footer > a.github {
+    position: fixed;
+    bottom: 38px;
+    left: 20px;
+    /*margin-left: 50px;*/
+    text-decoration: none;
+  }
+  body > footer > a.miniLock_ID {
+    position: fixed;
+    bottom: 38px;
+    /*left: 50%;*/
+    /*margin-left: 150px;*/
+    right: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
   }
 }
 
@@ -175,22 +205,45 @@ body > footer img {
   }
   body > header {
     right: 85%;
-    width: 200px;
-    text-shadow: 5px 5px 2px hsla(0, 0%, 0%, 0.33), 0px -1px hsla(0, 0%, 0%, 1);
+    width: 150px;
+    font: 30px/30px "GillSans-Bold";
+    color: hsl(0, 0%, 50%);
   }
   body > footer {
-    left: 85%;
+    bottom: 30px;
+    right: 85%;
+    height: 60px;
+    color: hsl(0, 0%, 50%);
   }
   body > footer img {
-    box-shadow: -5px 5px 2px hsla(0, 0%, 0%, 0.33);
-  }
-  body > footer img {
-    opacity: 0;
-  }
-
-  body.loaded > footer img {
-    opacity: 1;
-    transition: opacity 333ms linear 2s;
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
+    width: 60px;
+    height: 60px;
   }
 
+  body > footer > a.view_source {
+    position: fixed;
+    bottom: 150px;
+
+    right: 85%;
+    text-decoration: none;
+  }
+  body > footer > a.github {
+    position: fixed;
+    bottom: 210px;
+    right: 85%;
+    /*margin-left: 50px;*/
+    text-decoration: none;
+  }
+  body > footer > a.miniLock_ID {
+    position: fixed;
+    bottom: 180px;
+    /*left: 50%;*/
+    /*margin-left: 150px;*/
+    right: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+  }
 }
