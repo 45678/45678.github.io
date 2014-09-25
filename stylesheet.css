@@ -6,8 +6,7 @@ body, header, footer, article, h1 { margin: 0; padding: 0; }
 
 html {
   background:hsl(0, 0%, 33%);
-  background: linear-gradient(hsl(210, 0%, 33%), hsl(210, 0%, 33%));
-  background: linear-gradient(hsl(210, 5%, 33%), hsl(210, 5%, 33%));
+  background: linear-gradient(hsl(210, 5%, 33%), hsl(210, 10%, 23%));
   color: hsla(0, 0%, 100%, 0.66);
 }
 
@@ -82,20 +81,10 @@ body > header {
   z-index: 1;
   bottom: 50%;
   height: 90px;
-  /*color: white;*/
   text-align: right;
-  font: 30px/30px "GillSans";
-  opacity: 1;
-
-  /*-webkit-text-stroke-width: 1px;*/
-  /*-webkit-text-stroke-color: hsla(0, 0%, 0%, 0.33);*/
-}
-body.loaded > header {
-  opacity: 1;
 }
 body > header b {
   font-family: "GillSans-Bold";
-  /*letter-spacing: 1px;*/
   color: hsla(0, 0%, 100%, 0.78);
 }
 
