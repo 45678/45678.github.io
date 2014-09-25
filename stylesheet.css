@@ -1,7 +1,7 @@
 * { cursor: default; }
 a:link, a:visited { color: inherit; cursor:pointer;}
 a:link img { cursor:pointer; }
-body, header, footer, article, h1, iframe { margin: 0; padding: 0; }
+body, header, footer, article, h1, h2, iframe { margin: 0; padding: 0; }
 
 /* PAINT & TYPE */
 
@@ -11,6 +11,8 @@ html {
   color: hsla(0, 0%, 100%, 0.66);
   text-shadow: 0px -1px 3px hsla(0, 0%, 0%, 0.33);
 }
+
+
 
 b {
   font-family: "Calibri-Bold", "GillSans-Bold";
@@ -89,6 +91,11 @@ body.loaded > article header {
   opacity: 1;
   transition: opacity 666ms linear 333ms;
 }
+body.loaded > article header h2 {
+  font: 19px/20px "Calibri", "GillSans";
+  /*font: 30px/30px "Calibri", "GillSans";*/
+}
+
 
 body > article div.video,
 body > article a:link img {
