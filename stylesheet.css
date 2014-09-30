@@ -37,6 +37,20 @@ article {
   box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.33);
 }
 
+#miniLockLib img {
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
+  border-top: 14px solid hsl(0, 0%, 66%);
+  padding: 1px 0px 0;
+  background: hsla(0, 0%, 0%, 0.33);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 300px;
+  margin: 10px;
+}
+
+#miniLockLib img[alt="miniLockLib Home Page"] { float:left; }
+#miniLockLib img[alt="Test Suite"] { float:right; }
+
 #minilock-id-inspector img,
 #minilock-file-format img {
   display: block;
