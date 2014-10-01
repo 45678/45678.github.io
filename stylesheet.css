@@ -79,12 +79,7 @@ article {
 
 body > article header {
   margin: 10px;
-  opacity: 0;
   text-align: center;
-}
-body.loaded > article header {
-  opacity: 1;
-  transition: opacity 666ms linear 333ms;
 }
 
 body > article div.video,
