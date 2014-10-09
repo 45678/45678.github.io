@@ -32,6 +32,23 @@ article {
   overflow: hidden;
 }
 
+#minipost img {
+  display: block;
+  float: left;
+  margin: 10px;
+  width: 460px;
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
+  border-top: 14px solid hsl(0, 0%, 66%);
+  padding: 1px 0px 0;
+  background: hsla(0, 0%, 0%, 0.33);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#minipost img[alt="Index"] {
+  width: 100%;
+}
+
 #minilock-chrome-app div.big.video {
   margin: 20px 10px 20px;
   box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.33);
