@@ -8,6 +8,7 @@ body, header, footer, article, h1, h2, iframe { display: block; margin: 0; paddi
 
 html {
   background: radial-gradient(960px at 50% 100px, hsl(210, 5%, 45%), hsl(210, 5%, 33%)), hsl(210, 5%, 33%);
+  background: hsl(210, 3%, 33%);
   font: 19px/20px "Calibri", "GillSans", sans-serif;
   color: hsla(0, 0%, 100%, 0.66);
   text-shadow: 0px -1px 3px hsla(0, 0%, 0%, 0.33);
