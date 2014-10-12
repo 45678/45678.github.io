@@ -7,15 +7,14 @@ body, header, footer, article, h1, h2, iframe { display: block; margin: 0; paddi
 /* PAINT & TYPE */
 
 html {
-  background: radial-gradient(960px at 50% 100px, hsl(210, 5%, 45%), hsl(210, 5%, 33%)), hsl(210, 5%, 33%);
-  background: hsl(210, 3%, 33%);
-  font: 19px/20px "Calibri", "GillSans", sans-serif;
+  background: hsl(210, 0%, 33%);
+  font: 19px/20px "Noteworthy-Light", "Calibri", "Gill Sans", sans-serif;
   color: hsla(0, 0%, 100%, 0.66);
-  text-shadow: 0px -1px 3px hsla(0, 0%, 0%, 0.33);
+  text-shadow: 0px -1px 1px hsla(0, 0%, 0%, 0.16);
 }
 
 b {
-  font-family: "Calibri-Bold", "GillSans-Bold";
+  font-family: "Noteworthy-Bold", "Calibri", "Gill Sans", sans-serif;
   font-weight: normal;
   color: hsla(0, 0%, 100%, 0.78);
 }
@@ -37,7 +36,7 @@ article {
   display: block;
   float: left;
   margin: 10px;
-  width: 460px;
+  width: 300px;
   box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
   border-top: 14px solid hsl(0, 0%, 66%);
   padding: 1px 0px 0;
@@ -46,7 +45,7 @@ article {
   border-top-right-radius: 5px;
 }
 
-#minipost img[alt="Index"] {
+#minipost img[alt="miniLock Postcard Home Page"] {
   width: 940px;
 }
 
@@ -124,7 +123,7 @@ body > footer a {
     margin-right: 50px;
     height: 20px;
     z-index: 2;
-    font: 19px/20px "Calibri", "GillSans";
+    font: 19px/20px "Noteworthy-Light", "Calibri", "Gill Sans", sans-serif;
     color: hsl(0, 0%, 50%);
   }
   body > footer {
@@ -171,7 +170,7 @@ body > footer a {
     bottom: 50%;
     right: 85%;
     width: 150px;
-    font: 30px/30px "Calibri", "GillSans";
+    font: 30px/30px "Noteworthy-Light", "Calibri", "Gill Sans", sans-serif;
     color: hsl(0, 0%, 50%);
   }
   body > footer {
