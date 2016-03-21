@@ -118,7 +118,7 @@ body > footer a {
     margin: 60px auto 120px;
   }
   body > header {
-    bottom: 38px;
+    bottom: 20px;
     right: 50%;
     margin-right: 50px;
     height: 20px;
@@ -130,7 +130,6 @@ body > footer a {
     bottom: 0px; right: 0px; left: 0;
     height: 60px;
     text-align: left;
-    border-bottom: 18px solid hsl(0, 0%, 50%);
     background: hsl(210, 5%, 33%);
     box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.33);
     color: hsl(0, 0%, 50%);
@@ -143,17 +142,17 @@ body > footer a {
   }
   body > footer > a.view_source {
     position: fixed;
-    bottom: 38px;
+    bottom: 20px;
     right: 20px;
   }
   body > footer > a.github {
     position: fixed;
-    bottom: 38px;
+    bottom: 20px;
     left: 20px;
   }
-  body > footer > a.miniLock_ID {
+  body > footer > a.send_mail {
     position: fixed;
-    bottom: 38px;
+    bottom: 20px;
     right: 130px;
   }
 }
